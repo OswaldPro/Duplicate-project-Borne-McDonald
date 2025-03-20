@@ -6,7 +6,7 @@
       "description": "Deux steaks hachés, cheddar fondu, oignons, cornichons et la sauce inimitable, dans un pain avec graines de sésame.",
       "price": 5.20,
       "calories": 503,
-      "image": "images/big_mac.png"
+      "image": "assets/images/items/bigmac.png"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "description": "Steak haché, fromage fondu, cornichons, oignons, ketchup et moutarde, dans un pain moelleux.",
       "price": 2.50,
       "calories": 301,
-      "image": "images/cheeseburger.png"
+      "image": "assets/images/items/cheeseburger.png"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "description": "Filet de poulet pané, laitue croquante et sauce spéciale, dans un pain moelleux.",
       "price": 5.00,
       "calories": 445,
-      "image": "images/mcchicken.png"
+      "image": "assets/images/items/mcchicken.png"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "description": "Steak haché, fromage fondu, moutarde, ketchup, oignons et cornichons, dans un pain moelleux.",
       "price": 5.50,
       "calories": 517,
-      "image": "images/royal_cheese.png"
+      "image": "assets/images/items/royalcheese.png"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "description": "Filet de poisson pané, fromage fondu et sauce tartare, dans un pain moelleux.",
       "price": 4.50,
       "calories": 331,
-      "image": "images/filet_o_fish.png"
+      "image": "assets/images/items/filetofish.png"
     }
   ],
   "sides": [
@@ -48,7 +48,7 @@
       "description": "Portion de frites dorées et croustillantes.",
       "price": 2.20,
       "calories": 340,
-      "image": "images/frites_moyennes.png"
+      "image": "assets/images/items/frites.png"
     },
     {
       "id": 11,
@@ -56,7 +56,7 @@
       "description": "Quartiers de pommes de terre assaisonnés et dorés au four.",
       "price": 2.50,
       "calories": 298,
-      "image": "images/deluxe_potatoes.png"
+      "image": "assets/images/items/potatoes.png"
     },
     {
       "id": 12,
@@ -64,7 +64,7 @@
       "description": "Mélange de jeunes pousses et de légumes croquants.",
       "price": 2.00,
       "calories": 15,
-      "image": "images/ptite_salade.png"
+      "image": "assets/images/salades.webp"
     }
   ],
   "drinks": [
@@ -74,7 +74,7 @@
       "description": "Boisson gazeuse rafraîchissante.",
       "price": 2.00,
       "calories": 140,
-      "image": "images/coca_cola.png"
+      "image": "assets/images/boissons.webp"
     },
     {
       "id": 21,
@@ -100,7 +100,7 @@
       "description": "Glace onctueuse nappée de sauce chocolat.",
       "price": 2.70,
       "calories": 280,
-      "image": "images/sundae_chocolat.png"
+      "image": "assets/images/items/sundae.png"
     },
     {
       "id": 31,
@@ -148,7 +148,7 @@
       "drinkOptions": [21, 22],
       "toyOptions": ["Jouet Pokémon", "Livre Disney"],
       "price": 4.80,
-      "image": "images/happy_meal_cheeseburger.png"
+      "image": "assets/images/happy-meal.webp"
     },
     {
       "id": 201,

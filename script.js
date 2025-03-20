@@ -1,6 +1,6 @@
 let donnees = [];
 
-let productList = document.querySelector(".productList");
+let productList = document.getElementById("productList");
 
 
 
@@ -44,24 +44,22 @@ fetch("mcdo.json") // on va chercher notre fichier json
     }
 
     // on va parcourir le tableau, en fonction de la valeurs du filtre. exemple si filtre = drinks, on parcoura uniquement la partie des boissons
+    filteredProduct.forEach(function(product) { // comme filteredProduct conteint deja uniquement le produit filtree, pas besoin de refiltrer avec un for. Autant afficher chaque element de filteredProduct
+      let card = document.createElement("div");// on cree la div qui va recevoir le contenu de la card
+      card.classList.add("card");// on ajoute la class card pour pouvoir stylisé nos cards ensuite
 
-    for (let i = 0; i < filteredProduct.length; i ++){
-      let productList = filteredProduct[i];
-      
+      //on ajoute le contenu pour la card
+      card.innerHTML = `  
+        <h2>${product.name}</h2>
+        <img src="${product.image}" alt="${product.name}">
+        <p class="description">${product.description}</p>
+        <p class="prix">${product.price}</p>
+        <p class="calories">${product.calories}</p>
+      `;
 
-
-
-
-      let cardContent = `
-      <div class="card">
-        <h2>${productList.name}</h2>
-        <p class="description"></p>
-        <p class="prix"></p>
-        <p class="calorie"></p>
-        <img src="" alt="">
-      </div>
-      `
-  }
+      //on ajoute a la section productList
+      productList.appendChild(card);
+  });
 }
     
  
