@@ -1,0 +1,135 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ffffff, #eaeaea);
+}
+
+.navbar a img{
+    width: 70px;
+}
+
+.img-hero{
+    position: relative;
+}
+
+.img-hero img{
+    height: 100vh;
+    width: 100%;
+}
+
+
+.menu-mc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 50px;
+    max-width: 500px;
+    position: absolute;
+    top: 0%;
+    left: 35%;
+    margin-top: 15rem;
+}
+
+.menu-item {
+    
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+    margin: 3rem;
+}
+
+.menu-item a img{
+   width: 150px;
+   border-radius: 20px;
+}
+
+.actu{
+    font-size: 36px;
+    font-weight: 400;
+    color: green;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*************************** PAGE BURGER ***************************/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ffffff, #eaeaea);
+    padding: 10px 20px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: green;
+    font-weight: 600;
+}
+
+.zero{
+    background: green;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.category-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    background-color: green;
+}
+
+.category {
+    background: white;
+    border: 2px solid rgb(229, 232, 229);
+    padding: 15px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+.category.promo {
+    background: #c2a828;
+    color: white;
+    color: rgb(0, 103, 0);
+}
+
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.list-menu {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.list-menu img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+.list-menu span {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
