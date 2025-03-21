@@ -59,8 +59,4 @@ fetch("mcdo.json") // on va chercher notre fichier json
       productList.appendChild(card);
   });
 }
-    
-function ajouterProduit(){
-
-}
  
