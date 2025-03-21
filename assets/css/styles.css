@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -132,4 +138,47 @@
     font-size: 14px;
     font-weight: bold;
     text-align: center;
+}
+
+/*************************** CARD ***************************/
+
+#productList {
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.card {
+    width: 32%;
+    min-width: 450px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*************************** MODAL ***************************/
+
+.modal {
+    position: absolute;
+    z-index: 10;
+    top: 20%;
+    left: 50%;
+    width: 30%;
+    aspect-ratio: 1/1;
+    transform: translateX(-50%);
+    border: 1px solid green;
+    background-color: #ffffff;
+    box-shadow: 2px 5px #0000001c ;
+}
+
+.blur {
+    filter: blur(7px)
+}
+.d-none {
+    display: none;
 }
