@@ -2,8 +2,6 @@ let donnees = [];
 
 let productList = document.getElementById("productList");
 
-
-
 fetch("mcdo.json") // on va chercher notre fichier json
   .then(function(response) { //then s'execute quand le fichier est trouvé
     if (!response.ok) { // si la reponse n'est pas OK
@@ -62,4 +60,7 @@ fetch("mcdo.json") // on va chercher notre fichier json
   });
 }
     
+function ajouterProduit(){
+
+}
  
