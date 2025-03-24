@@ -86,8 +86,8 @@ document.addEventListener("DOMContentLoaded", function () {// Exécuter le code 
   });
 
   
-  btnCaisse.addEventListener("click", function () {// Écouteur d'événement : bouton "Payer en caisse"
-      alert("Vous avez choisi de payer en caisse."); // Afficher un message
+  btnCaisse.addEventListener("click", function () {// Écouteur d'événement : bouton "payer sur la borne"
+      alert("Vous avez choisi de payer sur la borne"); // Afficher un message
       modal.style.display = "none"; // Cacher la modale
   });
 
