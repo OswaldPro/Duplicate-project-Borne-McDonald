@@ -3,22 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Votre panier</title>
 </head>
 <body>
   <header>
-    <nav class="nav">
-        <div><a href="#"> < Retour</a></div>
-        <img src="assets/images/logos/logo-macdo.png" alt="cliquez pour revenir a l'acceuil">
-        <img src="assets/images/logos/logo-burger.png" alt="cliquez pour ouvrir le menu burger">
+    <nav class="navbar">
+        <a href="#">
+            <img src="assets/images/logos/logo-qrcode.png" alt="scannez votre QR code">
+        </a>
+        <a href="#">
+            <img src="assets/images/logos/logo-macdo.png" alt="cliquez pour revenir a l'acceuil">
+        </a>
+        <a href="#">
+            <img src="assets/images/logos/logo-search.png" alt="cliquez pour recherchez un produit">
+        </a>
     </nav>
-</header>
-<main>
     <div class="category-bar">
         <button class="category">LA CARTE</button>
         <button class="category promo">PROMOTIONS</button>
         <a href="panier.html"><button class="category"> PANIER <span class="zero">0</span></button></a>
+        <button class="category" id="payer">PAYER</button> <!-- Bouton pour déclencher la fenêtre modale -->
     </div>
+    <!-- Fenêtre modale pour choisir le mode de paiement (cachée par défaut) -->
+<div id="modalpayer" class="modalpayer">
+    <div class="modal-content">
+        <p>Où souhaitez-vous payer ?</p> <!-- Texte de la modale -->
+        <button id="comptoir">Payer au comptoir</button> <!-- Bouton pour payer au comptoir -->
+        <button id="caisse">Payer sur la borne</button> <!-- Bouton pour payer en caisse -->
+    </div>        
+</header>
+<main>
     <section class="commande"></section>
     
 </body>

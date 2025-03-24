@@ -8,12 +8,24 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div><a href="#"> < Retour</a></div>
-            <img src="assets/images/logos/logo-macdo.png" alt="cliquez pour revenir a l'acceuil">
-            <img src="assets/images/logos/logo-burger.png" alt="cliquez pour ouvrir le menu burger">
+        <nav class="navbar">
+            <a href="#">
+                <img src="assets/images/logos/logo-qrcode.png" alt="scannez votre QR code">
+            </a>
+            <a href="menu.html">
+                <img src="assets/images/logos/logo-macdo.png" alt="cliquez pour revenir a l'acceuil">
+            </a>
+            <a href="#">
+                <img src="assets/images/logos/logo-search.png" alt="cliquez pour recherchez un produit">
+            </a>
         </nav>
+        <div class="category-bar">
+            <button class="category">LA CARTE</button>
+            <button class="category promo">PROMOTIONS</button>
+            <a href="panier.html"><button class="category"> PANIER <span class="zero">0</span></button></a>
+        </div>        
     </header>
+
     <main>
         <section id="productList"></section>
 
