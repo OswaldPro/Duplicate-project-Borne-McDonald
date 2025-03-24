@@ -158,8 +158,6 @@ function suppPanier(index){;
   ouvrirPanier();
 }
 
-
-
 document.addEventListener("DOMContentLoaded", function () {// Exécuter le code quand la page est complètement chargée
   
   let payerBtn = document.querySelector("#payer");// Sélection du bouton "PAYER"
