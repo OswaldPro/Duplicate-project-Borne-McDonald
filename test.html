@@ -25,6 +25,16 @@
             <button class="category">LA CARTE</button>
             <button class="category promo">PROMOTIONS</button>
             <button class="category">PANIER <span class="zero">0</span></button>
+            <button class="category" id="payer">PAYER</button> <!-- Bouton pour déclencher la fenêtre modale -->
+        </div>
+        <!-- Fenêtre modale pour choisir le mode de paiement (cachée par défaut) -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Où souhaitez-vous payer ?</p> <!-- Texte de la modale -->
+            <button id="comptoir">Payer au comptoir</button> <!-- Bouton pour payer au comptoir -->
+            <button id="caisse">Payer en caisse</button> <!-- Bouton pour payer en caisse -->
+        </div>
+    </div>
         </div>
         <div class="panier">
             <h2>GRAND BIG MAC</h2>
@@ -40,4 +50,5 @@
     </div>
     </main>
 </body>
+<script src="script.js"></script>
 </html>

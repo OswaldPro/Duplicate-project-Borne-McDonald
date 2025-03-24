@@ -62,4 +62,38 @@ fetch("mcdo.json") // on va chercher notre fichier json
   });
 }
 
- 
+
+document.addEventListener("DOMContentLoaded", function () {// Exécuter le code quand la page est complètement chargée
+  
+  let payerBtn = document.querySelector("#payer");// Sélection du bouton "PAYER"
+
+  
+  let modal = document.querySelector("#modal");// Sélection de la modale (fenêtre)
+
+  
+  let btnComptoir = document.querySelector("#comptoir");// Sélection des boutons dans la modale
+  let btnCaisse = document.querySelector("#caisse");
+
+  
+  payerBtn.addEventListener("click", function () {// Écouteur d'événement : afficher la modale quand on clique sur "PAYER"
+      modal.style.display = "flex"; // Afficher la modale
+  });
+
+  btnComptoir.addEventListener("click", function () {  // Écouteur d'événement : bouton "Payer au comptoir"
+
+      alert("Vous avez choisi de payer au comptoir."); // Afficher un message
+      modal.style.display = "none"; // Cacher la modale
+  });
+
+  
+  btnCaisse.addEventListener("click", function () {// Écouteur d'événement : bouton "Payer en caisse"
+      alert("Vous avez choisi de payer en caisse."); // Afficher un message
+      modal.style.display = "none"; // Cacher la modale
+  });
+
+  modal.addEventListener("click", function (event) {//Écouteur d'événement : fermer la modale en cliquant en dehors du contenu
+      if (event.target === modal) { // Vérifier si l'utilisateur clique en dehors
+          modal.style.display = "none"; // Cacher la modale
+      }
+  });
+});
